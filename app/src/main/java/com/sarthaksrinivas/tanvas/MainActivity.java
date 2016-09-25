@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements iHapticServiceAda
             mHapticSprite = HapticSprite.create(serviceAdapter);
             mHapticSprite.setMaterial(mHapticMaterial);
             // Set the size and position of the haptic sprite to correspond to the view we created
-            View view = findViewById(R.id.vid);
+            View view = findViewById(R.id.view);
             int[] location = new int[2];
             view.getLocationOnScreen(location);
             mHapticSprite.setSize(view.getWidth(), view.getHeight());
